@@ -27,7 +27,7 @@ def bus_routes(stop):
     i = 0
     with alive_bar(total_stops) as bar:
         for code in stops_df['SIMT']:
-            print(f", Paradero actual: {stop}")
+            print(f", Paradero actual: {code}")
             url = f"https://api.xor.cl/red/bus-stop/{code}"
             response = requests.get(url)
             data = response.json()
