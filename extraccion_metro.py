@@ -36,5 +36,5 @@ timeanddate = timeanddate.strftime("%d-%m-%Y-%H:%M")
     
 metro_df = get_metro_data()
 
-metro_df.to_csv(f"metro_{timeanddate}.csv", index=False)
+metro_df.to_csv(f"metro_outputs/metro_{timeanddate}.csv", index=False)
 print("CSV creado.")
