@@ -14,7 +14,10 @@ def bus_routes(stop):
         for code in stop["SIMT"]:
             print(f"Paradero actual: {code}")
             url = f"https://api.xor.cl/red/bus-stop/{code}"
-            response = requests.get(url)
+            try:
+                response = requests.get(url)
+            except:
+                break
             data = response.json()
             
             for service in data.get("services", []):
@@ -51,12 +54,12 @@ properties_df = pd.json_normalize(df["properties"])
 stops_df = properties_df[["SIMT", "X", "Y"]]
 stops_df_clean = pd.DataFrame()
 stops_df_clean["SIMT"] = stops_df["SIMT"].unique()
-stops_df_500 = stops_df.sample(n = 500).reset_index()
+stops_df_1000 = stops_df.sample(n = 1000).reset_index()
 timeanddate = datetime.now()
 timeanddate = timeanddate.strftime("%d-%m-%Y-%H:%M")
 
 
-final_bus_df = bus_routes(stops_df_500)
+final_bus_df = bus_routes(stops_df_1000)
 final_bus_df
 
 final_bus_df.to_csv(f"buses_outputs/datos_{timeanddate}.csv", index=False)
