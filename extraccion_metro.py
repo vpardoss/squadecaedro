@@ -5,7 +5,6 @@ from datetime import datetime
 from alive_progress import alive_bar
 
 def get_metro_data():
-    current_datetime = datetime.now()
     url = "https://api.xor.cl/red/metro-network"
     all_stations_data = []
 
@@ -20,6 +19,7 @@ def get_metro_data():
             stations = line.get("stations", [])
             
             for station in stations:
+                current_datetime = datetime.now()
                 all_stations_data.append({
                     "line_id": line_id,
                     "station_id": station.get("id"),
