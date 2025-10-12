@@ -15,6 +15,7 @@ properties_df = pd.json_normalize(df['properties'])
 stops_df = properties_df[['SIMT', 'X', 'Y']]
 stops_df_clean = pd.DataFrame()
 stops_df_clean['SIMT'] = stops_df['SIMT'].unique()
+stops_df_500 = stops_df.sample(n = 500).reset_index()
 print(f"Comenzando extracción:")
 
 timeanddate = datetime.now()
@@ -55,9 +56,9 @@ def bus_routes(stop):
     final_df = final_df.drop(columns=['SIMT'])
     return final_df
 
-sample_codes = stops_df
-
-final_bus_df = bus_routes(sample_codes)
-
+final_bus_df = bus_routes(stops_df_500)
+final_bus_df
+'''
 final_bus_df.to_csv(f"datos_{timeanddate}.csv", index=False)
 print("CSV creado")
+'''
