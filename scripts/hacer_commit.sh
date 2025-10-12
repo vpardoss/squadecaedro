@@ -1,4 +1,5 @@
 #!/bin/bash
+cd
 cd python/intro_cs_datos/squadecaedro/
 git add buses_outputs
 git add metro_outputs
