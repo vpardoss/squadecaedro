@@ -14,7 +14,7 @@ properties_df = pd.json_normalize(df['properties'])
 # Seleccionamos la columna que corresponde al ID de los paraderos.
 stops_df = properties_df[['SIMT', 'X', 'Y']]
 stops_df_clean = pd.DataFrame()
-stops_df_clean['SIMT'] = simt_df['SIMT'].unique()
+stops_df_clean['SIMT'] = stops_df['SIMT'].unique()
 print(f"cant. normal: {len(stops_df)}\ncant. limpio: {len(stops_df_clean)}")
 
 timeanddate = datetime.now()
@@ -24,15 +24,9 @@ timeanddate = timeanddate.strftime("%d-%m-%Y-%H:%M:%S")
 def bus_routes(stop):
     all_routes_data = []
     total_stops = len(stop)
-
-    print(f"\ntotal {total_stops} paradas")
     i = 0
-    with alive_bar(100) as bar:
+    with alive_bar(total_stops) as bar:
         for code in stops_df['SIMT']:
-            if i > 10:
-                break
-            i += 1
-            print(f"{i}: {code}")
             url = f"https://api.xor.cl/red/bus-stop/{code}"
             response = requests.get(url)
             data = response.json()
@@ -47,7 +41,7 @@ def bus_routes(stop):
                             'min_arrival_time': bus.get('min_arrival_time'),
                             'max_arrival_time': bus.get('max_arrival_time')
                 })
-              bar()
+            bar()
     bus_routes = pd.DataFrame(all_routes_data)                
     final_df = pd.merge(
     bus_routes,
@@ -65,3 +59,4 @@ sample_codes = stops_df
 final_bus_df = bus_routes(sample_codes)
 
 final_bus_df.to_csv(f"datos_{timeanddate}.csv", index=False)
+print("CSV creado")
