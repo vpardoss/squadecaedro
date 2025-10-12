@@ -15,7 +15,7 @@ properties_df = pd.json_normalize(df['properties'])
 stops_df = properties_df[['SIMT', 'X', 'Y']]
 stops_df_clean = pd.DataFrame()
 stops_df_clean['SIMT'] = stops_df['SIMT'].unique()
-print(f"cant. normal: {len(stops_df)}\ncant. limpio: {len(stops_df_clean)}")
+print(f"Comenzando extracción:")
 
 timeanddate = datetime.now()
 
@@ -27,6 +27,7 @@ def bus_routes(stop):
     i = 0
     with alive_bar(total_stops) as bar:
         for code in stops_df['SIMT']:
+            print(f", Paradero actual: {stop}")
             url = f"https://api.xor.cl/red/bus-stop/{code}"
             response = requests.get(url)
             data = response.json()
