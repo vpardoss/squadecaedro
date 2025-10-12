@@ -27,26 +27,27 @@ def bus_routes(stop):
 
     print(f"\ntotal {total_stops} paradas")
     i = 0
-    # añadir código de la barra de progreso
-    for code in stops_df['SIMT']:
-        if i > 10:
-            break
-        i += 1
-        print(f"{i}: {code}")
-        url = f"https://api.xor.cl/red/bus-stop/{code}"
-        response = requests.get(url)
-        data = response.json()
-        
-        for service in data.get('services', []):
-                for bus in service.get('buses', []):
-                    all_routes_data.append({
-                        'bus_stop_code': code,
-                        'route_id': service.get('id'),
-                        'bus_id': bus.get('id'),
-                        'meters_distance': bus.get('meters_distance'),
-                        'min_arrival_time': bus.get('min_arrival_time'),
-                        'max_arrival_time': bus.get('max_arrival_time')
-            })
+    with alive_bar(100) as bar:
+        for code in stops_df['SIMT']:
+            if i > 10:
+                break
+            i += 1
+            print(f"{i}: {code}")
+            url = f"https://api.xor.cl/red/bus-stop/{code}"
+            response = requests.get(url)
+            data = response.json()
+            
+            for service in data.get('services', []):
+                    for bus in service.get('buses', []):
+                        all_routes_data.append({
+                            'bus_stop_code': code,
+                            'route_id': service.get('id'),
+                            'bus_id': bus.get('id'),
+                            'meters_distance': bus.get('meters_distance'),
+                            'min_arrival_time': bus.get('min_arrival_time'),
+                            'max_arrival_time': bus.get('max_arrival_time')
+                })
+              bar()
     bus_routes = pd.DataFrame(all_routes_data)                
     final_df = pd.merge(
     bus_routes,
