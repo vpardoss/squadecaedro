@@ -17,18 +17,19 @@ def get_metro_data():
             line_id = line.get("id")
             
             stations = line.get("stations", [])
-            
-            for station in stations:
-                current_datetime = datetime.now()
-                all_stations_data.append({
-                    "line_id": line_id,
-                    "station_id": station.get("id"),
-                    "name": station.get("name"),
-                    "status_code": station.get("status"),
-                    "status_description": station.get("description"),
-                    "date": current_datetime
-                })
-        bar()
+            with alive_bar(len(stations)) as bar2:
+                for station in stations:
+                    current_datetime = datetime.now()
+                    all_stations_data.append({
+                        "line_id": line_id,
+                        "station_id": station.get("id"),
+                        "name": station.get("name"),
+                        "status_code": station.get("status"),
+                        "status_description": station.get("description"),
+                        "date": current_datetime
+                    })
+                    bar2()
+            bar()
     
     return pd.DataFrame(all_stations_data)
 
