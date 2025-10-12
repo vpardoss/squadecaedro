@@ -17,7 +17,8 @@ stops_df_clean = pd.DataFrame()
 stops_df_clean['SIMT'] = stops_df['SIMT'].unique()
 stops_df_500 = stops_df.sample(n = 500).reset_index()
 print(f"Comenzando extracción:")
-
+stops_df_500
+'''
 timeanddate = datetime.now()
 
 timeanddate = timeanddate.strftime("%d-%m-%Y-%H:%M:%S")
@@ -28,7 +29,7 @@ def bus_routes(stop):
     i = 0
     with alive_bar(total_stops) as bar:
         for code in stops_df['SIMT']:
-            print(f", Paradero actual: {code}")
+            print(f"Paradero actual: {code}")
             url = f"https://api.xor.cl/red/bus-stop/{code}"
             response = requests.get(url)
             data = response.json()
@@ -58,7 +59,7 @@ def bus_routes(stop):
 
 final_bus_df = bus_routes(stops_df_500)
 final_bus_df
-'''
+
 final_bus_df.to_csv(f"datos_{timeanddate}.csv", index=False)
 print("CSV creado")
 '''
