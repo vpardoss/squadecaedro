@@ -12,7 +12,7 @@ def get_metro_data():
     lines_data = response.json()
 
     lines_list = lines_data.get("lines", [])
-    with alive_bar(total_stops) as bar:
+    with alive_bar(len(lines_list)) as bar:
         for line in lines_list:
             line_id = line.get("id")
             
