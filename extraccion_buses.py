@@ -56,7 +56,7 @@ stops_df_clean = pd.DataFrame()
 stops_df_clean["SIMT"] = stops_df["SIMT"].unique()
 stops_df_1000 = stops_df.sample(n = 1000).reset_index()
 timeanddate = datetime.now()
-timeanddate = timeanddate.strftime("%d-%m-%Y-%H:%M")
+timeanddate = timeanddate.strftime("%d-%m-%Y-%H-%M")
 
 
 final_bus_df = bus_routes(stops_df_1000)

@@ -32,7 +32,7 @@ def get_metro_data():
     return pd.DataFrame(all_stations_data)
 
 timeanddate = datetime.now()
-timeanddate = timeanddate.strftime("%d-%m-%Y-%H:%M")
+timeanddate = timeanddate.strftime("%d-%m-%Y-%H-%M")
     
 metro_df = get_metro_data()
 
