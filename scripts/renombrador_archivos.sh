@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# ARCHIVO HECHO CON IA
 # A simple script to replace all colons (:) with hyphens (-)
 # in the filenames of the current directory.
 
