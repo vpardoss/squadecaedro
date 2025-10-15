@@ -1,0 +1,144 @@
+line_id,station_id,name,status_code,status_description,date
+L1,san-pablo,San Pablo,0,Estación Operativa,2025-10-14 11:30:03.099291
+L1,neptuno,Neptuno,0,Estación Operativa,2025-10-14 11:30:03.099296
+L1,pajaritos,Pajaritos,0,Estación Operativa,2025-10-14 11:30:03.099297
+L1,las-rejas,Las Rejas,0,Estación Operativa,2025-10-14 11:30:03.099298
+L1,ecuador,Ecuador,0,Estación Operativa,2025-10-14 11:30:03.099299
+L1,san-alberto-hurtado,San Alberto Hurtado,0,Estación Operativa,2025-10-14 11:30:03.099300
+L1,universidad-de-santiago,Universidad de Santiago,0,Estación Operativa,2025-10-14 11:30:03.099300
+L1,estacion-central,Estación Central,0,Estación Operativa,2025-10-14 11:30:03.099301
+L1,u-l-a,U.L.A.,0,Estación Operativa,2025-10-14 11:30:03.099302
+L1,republica,República,0,Estación Operativa,2025-10-14 11:30:03.099302
+L1,los-heroes,Los Héroes,0,Estación Operativa,2025-10-14 11:30:03.099303
+L1,la-moneda,La Moneda,0,Estación Operativa,2025-10-14 11:30:03.099304
+L1,universidad-de-chile,Universidad de Chile,0,Estación Operativa,2025-10-14 11:30:03.099307
+L1,santa-lucia,Santa Lucía,0,Estación Operativa,2025-10-14 11:30:03.099307
+L1,universidad-catolica,Universidad Católica,0,Estación Operativa,2025-10-14 11:30:03.099308
+L1,baquedano,Baquedano,0,Estación Operativa,2025-10-14 11:30:03.099309
+L1,salvador,Salvador,0,Estación Operativa,2025-10-14 11:30:03.099311
+L1,manuel-montt,Manuel Montt,0,Estación Operativa,2025-10-14 11:30:03.099311
+L1,pedro-de-valdivia,Pedro de Valdivia,0,Estación Operativa,2025-10-14 11:30:03.099313
+L1,los-leones,Los Leones,0,Estación Operativa,2025-10-14 11:30:03.099314
+L1,tobalaba,Tobalaba,0,Estación Operativa,2025-10-14 11:30:03.099315
+L1,el-golf,El Golf,0,Estación Operativa,2025-10-14 11:30:03.099315
+L1,alcantara,Alcántara,0,Estación Operativa,2025-10-14 11:30:03.099316
+L1,escuela-militar,Escuela Militar,0,Estación Operativa,2025-10-14 11:30:03.099317
+L1,manquehue,Manquehue,0,Estación Operativa,2025-10-14 11:30:03.099317
+L1,hernando-de-magallanes,Hernando de Magallanes,0,Estación Operativa,2025-10-14 11:30:03.099318
+L1,los-dominicos,Los Dominicos,0,Estación Operativa,2025-10-14 11:30:03.099319
+L2,vespucio-norte,Vespucio Norte,0,Estación Operativa,2025-10-14 11:30:03.099326
+L2,zapadores,Zapadores,0,Estación Operativa,2025-10-14 11:30:03.099327
+L2,dorsal,Dorsal,0,Estación Operativa,2025-10-14 11:30:03.099328
+L2,einstein,Einstein,0,Estación Operativa,2025-10-14 11:30:03.099328
+L2,cementerios,Cementerios,0,Estación Operativa,2025-10-14 11:30:03.099329
+L2,cerro-blanco,Cerro Blanco,0,Estación Operativa,2025-10-14 11:30:03.099330
+L2,patronato,Patronato,0,Estación Operativa,2025-10-14 11:30:03.099331
+L2,puente-cal-y-canto,Puente Cal y Canto,0,Estación Operativa,2025-10-14 11:30:03.099331
+L2,santa-ana,Santa Ana,0,Estación Operativa,2025-10-14 11:30:03.099332
+L2,los-heroes,Los Héroes,0,Estación Operativa,2025-10-14 11:30:03.099333
+L2,toesca,Toesca,0,Estación Operativa,2025-10-14 11:30:03.099335
+L2,parque-ohiggins,Parque O'Higgins,0,Estación Operativa,2025-10-14 11:30:03.099335
+L2,rondizzoni,Rondizzoni,0,Estación Operativa,2025-10-14 11:30:03.099336
+L2,franklin,Franklin,0,Estación Operativa,2025-10-14 11:30:03.099336
+L2,el-llano,El Llano,0,Estación Operativa,2025-10-14 11:30:03.099337
+L2,san-miguel,San Miguel,0,Estación Operativa,2025-10-14 11:30:03.099338
+L2,lo-vial,Lo Vial,0,Estación Operativa,2025-10-14 11:30:03.099339
+L2,departamental,Departamental,0,Estación Operativa,2025-10-14 11:30:03.099339
+L2,ciudad-del-nino,Ciudad del Niño,0,Estación Operativa,2025-10-14 11:30:03.099340
+L2,lo-ovalle,Lo Ovalle,0,Estación Operativa,2025-10-14 11:30:03.099341
+L2,el-parron,El Parrón,0,Estación Operativa,2025-10-14 11:30:03.099341
+L2,la-cisterna,La Cisterna,0,Estación Operativa,2025-10-14 11:30:03.099342
+L2,el-bosque,El Bosque,0,Estación Operativa,2025-10-14 11:30:03.099343
+L2,observatorio,Observatorio,0,Estación Operativa,2025-10-14 11:30:03.099343
+L2,copa-lo-martinez,Copa Lo Martinez,0,Estación Operativa,2025-10-14 11:30:03.099344
+L2,hospital-el-pino,Hospital El Pino,0,Estación Operativa,2025-10-14 11:30:03.099345
+L3,plaza-quilicura,Plaza Quilicura,0,Estación Operativa,2025-10-14 11:30:03.099349
+L3,lo-cruzat,Lo Cruzat,0,Estación Operativa,2025-10-14 11:30:03.099350
+L3,ferrocarril,Ferrocarril,0,Estación Operativa,2025-10-14 11:30:03.099351
+L3,los-libertadores,Los Libertadores,0,Estación Operativa,2025-10-14 11:30:03.099351
+L3,cardenal-caro,Cardenal Caro,0,Estación Operativa,2025-10-14 11:30:03.099353
+L3,vivaceta,Vivaceta,0,Estación Operativa,2025-10-14 11:30:03.099354
+L3,conchali,Conchalí,0,Estación Operativa,2025-10-14 11:30:03.099355
+L3,plaza-chacabuco,Plaza Chacabuco,0,Estación Operativa,2025-10-14 11:30:03.099355
+L3,hospitales,Hospitales,0,Estación Operativa,2025-10-14 11:30:03.099356
+L3,puente-cal-y-canto,Puente Cal y Canto,0,Estación Operativa,2025-10-14 11:30:03.099357
+L3,plaza-de-armas,Plaza de Armas,0,Estación Operativa,2025-10-14 11:30:03.099357
+L3,universidad-de-chile,Universidad de Chile,0,Estación Operativa,2025-10-14 11:30:03.099358
+L3,parque-almagro,Parque Almagro,0,Estación Operativa,2025-10-14 11:30:03.099359
+L3,matta,Matta,0,Estación Operativa,2025-10-14 11:30:03.099360
+L3,irarrazaval,Irarrázaval,0,Estación Operativa,2025-10-14 11:30:03.099361
+L3,monsenor-eyzaguirre,Monseñor Eyzaguirre,0,Estación Operativa,2025-10-14 11:30:03.099361
+L3,nunoa,Ñuñoa,0,Estación Operativa,2025-10-14 11:30:03.099362
+L3,chile-espana,Chile España,0,Estación Operativa,2025-10-14 11:30:03.099362
+L3,villa-frei,Villa Frei,0,Estación Operativa,2025-10-14 11:30:03.099363
+L3,plaza-egana,Plaza Egaña,0,Estación Operativa,2025-10-14 11:30:03.099364
+L3,fernando-castillo-velasco,Fernando Castillo Velasco,0,Estación Operativa,2025-10-14 11:30:03.099365
+L4,tobalaba,Tobalaba,0,Estación Operativa,2025-10-14 11:30:03.099369
+L4,cristobal-colon,Cristóbal Colón,0,Estación Operativa,2025-10-14 11:30:03.099369
+L4,francisco-bilbao,Francisco Bilbao,0,Estación Operativa,2025-10-14 11:30:03.099374
+L4,principe-de-gales,Príncipe de Gales,0,Estación Operativa,2025-10-14 11:30:03.099375
+L4,simon-bolivar,Simón Bolivar,0,Estación Operativa,2025-10-14 11:30:03.099375
+L4,plaza-egana,Plaza Egaña,0,Estación Operativa,2025-10-14 11:30:03.099376
+L4,los-orientales,Los Orientales,0,Estación Operativa,2025-10-14 11:30:03.099377
+L4,grecia,Grecia,0,Estación Operativa,2025-10-14 11:30:03.099378
+L4,los-presidentes,Los Presidentes,0,Estación Operativa,2025-10-14 11:30:03.099378
+L4,quilin,Quilín,0,Estación Operativa,2025-10-14 11:30:03.099379
+L4,las-torres,Las Torres,0,Estación Operativa,2025-10-14 11:30:03.099380
+L4,macul,Macul,0,Estación Operativa,2025-10-14 11:30:03.099381
+L4,vicuna-mackenna,Vicuña Mackenna,0,Estación Operativa,2025-10-14 11:30:03.099382
+L4,vicente-valdes,Vicente Valdés,0,Estación Operativa,2025-10-14 11:30:03.099382
+L4,rojas-magallanes,Rojas Magallanes,0,Estación Operativa,2025-10-14 11:30:03.099383
+L4,trinidad,Trinidad,0,Estación Operativa,2025-10-14 11:30:03.099384
+L4,san-jose-de-la-estrella,San José de la Estrella,0,Estación Operativa,2025-10-14 11:30:03.099385
+L4,los-quillayes,Los Quillayes,0,Estación Operativa,2025-10-14 11:30:03.099385
+L4,elisa-correa,Elisa Correa,0,Estación Operativa,2025-10-14 11:30:03.099386
+L4,hospital-sotero-del-rio,Hospital Sótero del Río,0,Estación Operativa,2025-10-14 11:30:03.099387
+L4,protectora-de-la-infancia,Protectora de la Infancia,0,Estación Operativa,2025-10-14 11:30:03.099387
+L4,las-mercedes,Las Mercedes,0,Estación Operativa,2025-10-14 11:30:03.099388
+L4,plaza-de-puente-alto,Plaza de Puente Alto,0,Estación Operativa,2025-10-14 11:30:03.099390
+L4A,vicuna-mackenna,Vicuña Mackenna,0,Estación Operativa,2025-10-14 11:30:03.099392
+L4A,santa-julia,Santa Julia,0,Estación Operativa,2025-10-14 11:30:03.099393
+L4A,la-granja,La Granja,0,Estación Operativa,2025-10-14 11:30:03.099394
+L4A,santa-rosa,Santa Rosa,0,Estación Operativa,2025-10-14 11:30:03.099394
+L4A,san-ramon,San Ramón,0,Estación Operativa,2025-10-14 11:30:03.099396
+L4A,la-cisterna,La Cisterna,0,Estación Operativa,2025-10-14 11:30:03.099397
+L5,plaza-de-maipu,Plaza de Maipú,0,Estación Operativa,2025-10-14 11:30:03.099400
+L5,santiago-bueras,Santiago Bueras,0,Estación Operativa,2025-10-14 11:30:03.099401
+L5,del-sol,Del Sol,0,Estación Operativa,2025-10-14 11:30:03.099401
+L5,monte-tabor,Monte Tabor,0,Estación Operativa,2025-10-14 11:30:03.099402
+L5,las-parcelas,Las Parcelas,0,Estación Operativa,2025-10-14 11:30:03.099403
+L5,laguna-sur,Laguna Sur,0,Estación Operativa,2025-10-14 11:30:03.099403
+L5,barrancas,Barrancas,0,Estación Operativa,2025-10-14 11:30:03.099404
+L5,pudahuel,Pudahuel,0,Estación Operativa,2025-10-14 11:30:03.099405
+L5,san-pablo,San Pablo,0,Estación Operativa,2025-10-14 11:30:03.099405
+L5,lo-prado,Lo Prado,0,Estación Operativa,2025-10-14 11:30:03.099406
+L5,blanqueado,Blanqueado,0,Estación Operativa,2025-10-14 11:30:03.099407
+L5,gruta-de-lourdes,Gruta de Lourdes,0,Estación Operativa,2025-10-14 11:30:03.099407
+L5,quinta-normal,Quinta Normal,0,Estación Operativa,2025-10-14 11:30:03.099409
+L5,cumming,Cumming,0,Estación Operativa,2025-10-14 11:30:03.099410
+L5,santa-ana,Santa Ana,0,Estación Operativa,2025-10-14 11:30:03.099411
+L5,plaza-de-armas,Plaza de Armas,0,Estación Operativa,2025-10-14 11:30:03.099411
+L5,bellas-artes,Bellas Artes,0,Estación Operativa,2025-10-14 11:30:03.099412
+L5,baquedano,Baquedano,0,Estación Operativa,2025-10-14 11:30:03.099413
+L5,parque-bustamante,Parque Bustamante,0,Estación Operativa,2025-10-14 11:30:03.099413
+L5,santa-isabel,Santa Isabel,0,Estación Operativa,2025-10-14 11:30:03.099414
+L5,irarrazaval,Irarrázaval,0,Estación Operativa,2025-10-14 11:30:03.099415
+L5,nuble,Ñuble,0,Estación Operativa,2025-10-14 11:30:03.099416
+L5,rodrigo-de-araya,Rodrigo de Araya,0,Estación Operativa,2025-10-14 11:30:03.099416
+L5,carlos-valdovinos,Carlos Valdovinos,0,Estación Operativa,2025-10-14 11:30:03.099417
+L5,camino-agricola,Camino Agrícola,0,Estación Operativa,2025-10-14 11:30:03.099418
+L5,san-joaquin,San Joaquín,0,Estación Operativa,2025-10-14 11:30:03.099418
+L5,pedrero,Pedrero,0,Estación Operativa,2025-10-14 11:30:03.099419
+L5,mirador,Mirador,0,Estación Operativa,2025-10-14 11:30:03.099420
+L5,bellavista-de-la-florida,Bellavista de La Florida,0,Estación Operativa,2025-10-14 11:30:03.099420
+L5,vicente-valdes,Vicente Valdés,0,Estación Operativa,2025-10-14 11:30:03.099421
+L6,cerrillos,Cerrillos,0,Estación Operativa,2025-10-14 11:30:03.099423
+L6,lo-valledor,Lo Valledor,0,Estación Operativa,2025-10-14 11:30:03.099424
+L6,pdte-pedro-aguirre-cerda,Pdte. Pedro Aguirre Cerda,0,Estación Operativa,2025-10-14 11:30:03.099426
+L6,franklin,Franklin,0,Estación Operativa,2025-10-14 11:30:03.099427
+L6,bio-bio,Bío Bío,0,Estación Operativa,2025-10-14 11:30:03.099427
+L6,nuble,Ñuble,0,Estación Operativa,2025-10-14 11:30:03.099428
+L6,estadio-nacional,Estadio Nacional,0,Estación Operativa,2025-10-14 11:30:03.099429
+L6,nunoa,Ñuñoa,0,Estación Operativa,2025-10-14 11:30:03.099431
+L6,ines-de-suarez,Inés de Suárez,0,Estación Operativa,2025-10-14 11:30:03.099431
+L6,los-leones,Los Leones,0,Estación Operativa,2025-10-14 11:30:03.099432
