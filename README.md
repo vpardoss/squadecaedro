@@ -23,7 +23,7 @@ Los archivos principales del proyecto corresponden a:
 ---
 
 ## Sobre la extracción de datos (IMPORTANTE)
-La extracción de datos es automatizada, y el proceso de este está señalada en el README del directorio **`Scripts`**.
+La extracción de datos es automatizada, y el proceso está señalado en el README del directorio **`Scripts`**.
 * Los datos de los buses de Red se extraen cada 2 horas, de las 6 Hrs a las 22 Hrs.
 * Los datos del estado del metro se extraen cada 1 hora, de las 6:30 Hrs a las 22:30 Hrs.
 * A las 23 Hrs se realiza un commit automático, que posee como comentario "datos de `{fecha}` añadidos, donde `{fecha}` cambia de forma dinámica (Para más información, ver **`scripts/hacer_commit.sh`**).
