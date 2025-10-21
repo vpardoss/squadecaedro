@@ -1,6 +1,6 @@
 # Squadecaedro: Análisis de Datos del Transporte Público de Santiago
 
-EL repositorio del proyecto para la extracción y análisis de datos del sistema de transporte público Red Movilidad y del Metro de Santiago. El objetivo principal es recolectar información de buses y metro para su posterior análisis y visualización, siguiendo la propuesta detallada en `squadecaedro_propuesta.ipynb`.
+Squadecaedro es un proyecto para la extracción y análisis de datos del sistema de transporte público Red Movilidad y del Metro de Santiago. El objetivo principal es recolectar información de buses y metro para su posterior análisis y visualización, siguiendo la propuesta detallada en `squadecaedro_propuesta.ipynb`.
 
 ---
 
