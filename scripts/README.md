@@ -1,5 +1,5 @@
 ## Scripts
-En este directorio se encuentran los scripts de bash que permiten la automatización de la recolección de datos. Para asegurar la recolección continua de datos, estos scripts están configurados para ejecutarse automáticamente en un servidor mediante tareas de **cron**. El archivo `crontab.txt` documenta la configuración utilizada. El servidor utilizado funciona las 24 horas los 7 días de la semana, corriendo Ubuntu 24.04 LTS como sistema operativo.
+En este directorio se encuentran los scripts de bash que permiten la automatización de la recolección de datos. Para asegurar la recolección continua de datos, estos scripts están configurados para ejecutarse automáticamente en un servidor mediante tareas de **cron**. El archivo `crontab.txt` documenta la configuración utilizada. El servidor utilizado funciona las 24 horas los 7 días de la semana, corriendo Ubuntu Server 24.04 LTS como sistema operativo.
 
 * **`buses.sh`**: Se encarga de ingresar al entorno virtual de Python en el servidor para posteriormente ejecutar **`extraccion_buses.py`**.
 * **`metro.sh`**: Se encarga de ingresar al entorno virtual de Python en el servidor para posteriormente ejecutar **`extraccion_metro.py`**.
