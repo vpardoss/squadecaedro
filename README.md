@@ -7,9 +7,10 @@ Squadecaedro es un proyecto para la extracción y análisis de datos del sistema
 ## Componentes Principales
 Los archivos principales del proyecto corresponden a:
 
+* **`analisis_datos.ipynb`**: Notebook de Jupyter que contiene el Análisis Exploratorio de Datos (EDA). Aquí se limpian, procesan, analizan y visualizan los datos recolectados por los scripts de extracción.
+* **`squadecaedro_propuesta.ipynb`**: Notebook de Jupyter que contiene el resumen del proyecto hasta la fecha.
 * **`extraccion_buses.py`**: Script de Python encargado de realizar las peticiones a la API y recolectar datos en tiempo real sobre la operación de los buses.
 * **`extraccion_metro.py`**: Script de Python similar, enfocado en la recolección de datos sobre el estado de la red de Metro (estado de servicio, estaciones, etc.).
-* **`analisis_datos.ipynb`**: Notebook de Jupyter que contiene el Análisis Exploratorio de Datos (EDA). Aquí se limpian, procesan, analizan y visualizan los datos recolectados por los scripts de extracción.
 * Las recolecciones de datos se encuentran en los directorios **`buses_outputs`** y **`metro_outputs`**.
 ---
 
