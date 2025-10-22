@@ -17,7 +17,7 @@ Los archivos principales del proyecto corresponden a:
 
 * La información de los recorridos de Red es obtenida de **api-red**, un proyecto desarrollado por xorcl en [GitHub](https://github.com/xorcl/api-red).
 * La información de los paraderos de buses de Santiago es obtenida de **geojson-Transantiago**, proyecto desarrollado por **JoseDTPM** en [GitHub](https://github.com/JoseDTPM/geojson-Transantiago).
-* Los datos de las proyecciones de población del Censo fueron obtenidos de **censo_proyecciones_poblacion**, proyecto desarrollado por **bastianolea** en[GitHub](https://github.com/bastianolea/censo_proyecciones_poblacion).
+* Los datos de las proyecciones de población del Censo fueron obtenidos de **censo_proyecciones_poblacion**, proyecto desarrollado por **bastianolea** en [GitHub](https://github.com/bastianolea/censo_proyecciones_poblacion).
 * Los mapas vectoriales de la RM fueron obtenidos de la [colección de mapas vectoriales de la BCN](https://www.bcn.cl/siit/mapas_vectoriales).
 
 
