@@ -1,0 +1,144 @@
+line_id,station_id,name,status_code,status_description,date
+L1,san-pablo,San Pablo,0,Estación Operativa,2025-10-25 16:30:03.431699
+L1,neptuno,Neptuno,0,Estación Operativa,2025-10-25 16:30:03.431704
+L1,pajaritos,Pajaritos,0,Estación Operativa,2025-10-25 16:30:03.431705
+L1,las-rejas,Las Rejas,0,Estación Operativa,2025-10-25 16:30:03.431706
+L1,ecuador,Ecuador,0,Estación Operativa,2025-10-25 16:30:03.431707
+L1,san-alberto-hurtado,San Alberto Hurtado,0,Estación Operativa,2025-10-25 16:30:03.431708
+L1,universidad-de-santiago,Universidad de Santiago,0,Estación Operativa,2025-10-25 16:30:03.431708
+L1,estacia3n-central,EstaciÃ³n Central,0,Estación Operativa,2025-10-25 16:30:03.431709
+L1,u-l-a,U.L.A.,0,Estación Operativa,2025-10-25 16:30:03.431710
+L1,repaoblica,RepÃºblica,0,Estación Operativa,2025-10-25 16:30:03.431711
+L1,los-ha-c-roes,Los HÃ©roes,0,Estación Operativa,2025-10-25 16:30:03.431711
+L1,la-moneda,La Moneda,0,Estación Operativa,2025-10-25 16:30:03.431712
+L1,universidad-de-chile,Universidad de Chile,0,Estación Operativa,2025-10-25 16:30:03.431713
+L1,santa-lucaa,Santa LucÃ­a,0,Estación Operativa,2025-10-25 16:30:03.431713
+L1,universidad-cata3lica,Universidad CatÃ³lica,0,Estación Operativa,2025-10-25 16:30:03.431714
+L1,baquedano,Baquedano,0,Estación Operativa,2025-10-25 16:30:03.431715
+L1,salvador,Salvador,0,Estación Operativa,2025-10-25 16:30:03.431715
+L1,manuel-montt,Manuel Montt,0,Estación Operativa,2025-10-25 16:30:03.431716
+L1,pedro-de-valdivia,Pedro de Valdivia,0,Estación Operativa,2025-10-25 16:30:03.431719
+L1,los-leones,Los Leones,0,Estación Operativa,2025-10-25 16:30:03.431720
+L1,tobalaba,Tobalaba,0,Estación Operativa,2025-10-25 16:30:03.431720
+L1,el-golf,El Golf,0,Estación Operativa,2025-10-25 16:30:03.431721
+L1,alca-ntara,AlcÃ¡ntara,0,Estación Operativa,2025-10-25 16:30:03.431722
+L1,escuela-militar,Escuela Militar,0,Estación Operativa,2025-10-25 16:30:03.431723
+L1,manquehue,Manquehue,0,Estación Operativa,2025-10-25 16:30:03.431723
+L1,hernando-de-magallanes,Hernando de Magallanes,0,Estación Operativa,2025-10-25 16:30:03.431724
+L1,los-dominicos,Los Dominicos,0,Estación Operativa,2025-10-25 16:30:03.431725
+L2,vespucio-norte,Vespucio Norte,0,Estación Operativa,2025-10-25 16:30:03.431732
+L2,zapadores,Zapadores,0,Estación Operativa,2025-10-25 16:30:03.431733
+L2,dorsal,Dorsal,0,Estación Operativa,2025-10-25 16:30:03.431734
+L2,einstein,Einstein,0,Estación Operativa,2025-10-25 16:30:03.431734
+L2,cementerios,Cementerios,0,Estación Operativa,2025-10-25 16:30:03.431735
+L2,cerro-blanco,Cerro Blanco,0,Estación Operativa,2025-10-25 16:30:03.431742
+L2,patronato,Patronato,0,Estación Operativa,2025-10-25 16:30:03.431743
+L2,puente-cal-y-canto,Puente Cal y Canto,0,Estación Operativa,2025-10-25 16:30:03.431744
+L2,santa-ana,Santa Ana,0,Estación Operativa,2025-10-25 16:30:03.431745
+L2,los-ha-c-roes,Los HÃ©roes,0,Estación Operativa,2025-10-25 16:30:03.431745
+L2,toesca,Toesca,0,Estación Operativa,2025-10-25 16:30:03.431750
+L2,parque-ohiggins,Parque O'Higgins,0,Estación Operativa,2025-10-25 16:30:03.431750
+L2,rondizzoni,Rondizzoni,0,Estación Operativa,2025-10-25 16:30:03.431751
+L2,franklin,Franklin,0,Estación Operativa,2025-10-25 16:30:03.431752
+L2,el-llano,El Llano,0,Estación Operativa,2025-10-25 16:30:03.431752
+L2,san-miguel,San Miguel,0,Estación Operativa,2025-10-25 16:30:03.431753
+L2,lo-vial,Lo Vial,0,Estación Operativa,2025-10-25 16:30:03.431754
+L2,departamental,Departamental,0,Estación Operativa,2025-10-25 16:30:03.431754
+L2,ciudad-del-nia-o,Ciudad del NiÃ±o,0,Estación Operativa,2025-10-25 16:30:03.431755
+L2,lo-ovalle,Lo Ovalle,0,Estación Operativa,2025-10-25 16:30:03.431756
+L2,el-parra3n,El ParrÃ³n,0,Estación Operativa,2025-10-25 16:30:03.431756
+L2,la-cisterna,La Cisterna,0,Estación Operativa,2025-10-25 16:30:03.431757
+L2,el-bosque,El Bosque,0,Estación Operativa,2025-10-25 16:30:03.431758
+L2,observatorio,Observatorio,0,Estación Operativa,2025-10-25 16:30:03.431758
+L2,copa-lo-martinez,Copa Lo Martinez,0,Estación Operativa,2025-10-25 16:30:03.431759
+L2,hospital-el-pino,Hospital El Pino,0,Estación Operativa,2025-10-25 16:30:03.431760
+L3,plaza-quilicura,Plaza Quilicura,0,Estación Operativa,2025-10-25 16:30:03.431765
+L3,lo-cruzat,Lo Cruzat,0,Estación Operativa,2025-10-25 16:30:03.431766
+L3,ferrocarril,Ferrocarril,0,Estación Operativa,2025-10-25 16:30:03.431767
+L3,los-libertadores,Los Libertadores,0,Estación Operativa,2025-10-25 16:30:03.431768
+L3,cardenal-caro,Cardenal Caro,0,Estación Operativa,2025-10-25 16:30:03.431770
+L3,vivaceta,Vivaceta,0,Estación Operativa,2025-10-25 16:30:03.431770
+L3,conchala,ConchalÃ­,0,Estación Operativa,2025-10-25 16:30:03.431771
+L3,plaza-chacabuco,Plaza Chacabuco,0,Estación Operativa,2025-10-25 16:30:03.431772
+L3,hospitales,Hospitales,0,Estación Operativa,2025-10-25 16:30:03.431773
+L3,puente-cal-y-canto,Puente Cal y Canto,0,Estación Operativa,2025-10-25 16:30:03.431773
+L3,plaza-de-armas,Plaza de Armas,0,Estación Operativa,2025-10-25 16:30:03.431774
+L3,universidad-de-chile,Universidad de Chile,0,Estación Operativa,2025-10-25 16:30:03.431775
+L3,parque-almagro,Parque Almagro,0,Estación Operativa,2025-10-25 16:30:03.431775
+L3,matta,Matta,0,Estación Operativa,2025-10-25 16:30:03.431776
+L3,irarra-zaval,IrarrÃ¡zaval,0,Estación Operativa,2025-10-25 16:30:03.431777
+L3,monsea-or-eyzaguirre,MonseÃ±or Eyzaguirre,0,Estación Operativa,2025-10-25 16:30:03.431777
+L3,aua-oa,ÃuÃ±oa,0,Estación Operativa,2025-10-25 16:30:03.431778
+L3,chile-espaa-a,Chile EspaÃ±a,0,Estación Operativa,2025-10-25 16:30:03.431779
+L3,villa-frei,Villa Frei,0,Estación Operativa,2025-10-25 16:30:03.431779
+L3,plaza-egaa-a,Plaza EgaÃ±a,0,Estación Operativa,2025-10-25 16:30:03.431780
+L3,fernando-castillo-velasco,Fernando Castillo Velasco,0,Estación Operativa,2025-10-25 16:30:03.431781
+L4,tobalaba,Tobalaba,0,Estación Operativa,2025-10-25 16:30:03.431784
+L4,crista3bal-cola3n,CristÃ³bal ColÃ³n,0,Estación Operativa,2025-10-25 16:30:03.431784
+L4,francisco-bilbao,Francisco Bilbao,0,Estación Operativa,2025-10-25 16:30:03.431786
+L4,prancipe-de-gales,PrÃ­ncipe de Gales,0,Estación Operativa,2025-10-25 16:30:03.431787
+L4,sima3n-bolivar,SimÃ³n Bolivar,0,Estación Operativa,2025-10-25 16:30:03.431789
+L4,plaza-egaa-a,Plaza EgaÃ±a,0,Estación Operativa,2025-10-25 16:30:03.431790
+L4,los-orientales,Los Orientales,0,Estación Operativa,2025-10-25 16:30:03.431790
+L4,grecia,Grecia,0,Estación Operativa,2025-10-25 16:30:03.431791
+L4,los-presidentes,Los Presidentes,0,Estación Operativa,2025-10-25 16:30:03.431792
+L4,quilan,QuilÃ­n,0,Estación Operativa,2025-10-25 16:30:03.431792
+L4,las-torres,Las Torres,0,Estación Operativa,2025-10-25 16:30:03.431793
+L4,macul,Macul,0,Estación Operativa,2025-10-25 16:30:03.431794
+L4,vicua-a-mackenna,VicuÃ±a Mackenna,0,Estación Operativa,2025-10-25 16:30:03.431795
+L4,vicente-valda-c-s,Vicente ValdÃ©s,0,Estación Operativa,2025-10-25 16:30:03.431795
+L4,rojas-magallanes,Rojas Magallanes,0,Estación Operativa,2025-10-25 16:30:03.431796
+L4,trinidad,Trinidad,0,Estación Operativa,2025-10-25 16:30:03.431797
+L4,san-josa-c-de-la-estrella,San JosÃ© de la Estrella,0,Estación Operativa,2025-10-25 16:30:03.431797
+L4,los-quillayes,Los Quillayes,0,Estación Operativa,2025-10-25 16:30:03.431798
+L4,elisa-correa,Elisa Correa,0,Estación Operativa,2025-10-25 16:30:03.431799
+L4,hospital-sa3tero-del-rao,Hospital SÃ³tero del RÃ­o,0,Estación Operativa,2025-10-25 16:30:03.431799
+L4,protectora-de-la-infancia,Protectora de la Infancia,0,Estación Operativa,2025-10-25 16:30:03.431800
+L4,las-mercedes,Las Mercedes,0,Estación Operativa,2025-10-25 16:30:03.431802
+L4,plaza-de-puente-alto,Plaza de Puente Alto,0,Estación Operativa,2025-10-25 16:30:03.431804
+L4A,vicua-a-mackenna,VicuÃ±a Mackenna,0,Estación Operativa,2025-10-25 16:30:03.431807
+L4A,santa-julia,Santa Julia,0,Estación Operativa,2025-10-25 16:30:03.431808
+L4A,la-granja,La Granja,0,Estación Operativa,2025-10-25 16:30:03.431808
+L4A,santa-rosa,Santa Rosa,0,Estación Operativa,2025-10-25 16:30:03.431809
+L4A,san-rama3n,San RamÃ³n,0,Estación Operativa,2025-10-25 16:30:03.431810
+L4A,la-cisterna,La Cisterna,0,Estación Operativa,2025-10-25 16:30:03.431810
+L5,plaza-de-maipao,Plaza de MaipÃº,0,Estación Operativa,2025-10-25 16:30:03.431813
+L5,santiago-bueras,Santiago Bueras,0,Estación Operativa,2025-10-25 16:30:03.431814
+L5,del-sol,Del Sol,0,Estación Operativa,2025-10-25 16:30:03.431814
+L5,monte-tabor,Monte Tabor,0,Estación Operativa,2025-10-25 16:30:03.431815
+L5,las-parcelas,Las Parcelas,0,Estación Operativa,2025-10-25 16:30:03.431816
+L5,laguna-sur,Laguna Sur,0,Estación Operativa,2025-10-25 16:30:03.431816
+L5,barrancas,Barrancas,0,Estación Operativa,2025-10-25 16:30:03.431817
+L5,pudahuel,Pudahuel,0,Estación Operativa,2025-10-25 16:30:03.431818
+L5,san-pablo,San Pablo,0,Estación Operativa,2025-10-25 16:30:03.431819
+L5,lo-prado,Lo Prado,0,Estación Operativa,2025-10-25 16:30:03.431819
+L5,blanqueado,Blanqueado,0,Estación Operativa,2025-10-25 16:30:03.431820
+L5,gruta-de-lourdes,Gruta de Lourdes,0,Estación Operativa,2025-10-25 16:30:03.431821
+L5,quinta-normal,Quinta Normal,0,Estación Operativa,2025-10-25 16:30:03.431823
+L5,cumming,Cumming,0,Estación Operativa,2025-10-25 16:30:03.431823
+L5,santa-ana,Santa Ana,0,Estación Operativa,2025-10-25 16:30:03.431824
+L5,plaza-de-armas,Plaza de Armas,0,Estación Operativa,2025-10-25 16:30:03.431825
+L5,bellas-artes,Bellas Artes,0,Estación Operativa,2025-10-25 16:30:03.431825
+L5,baquedano,Baquedano,0,Estación Operativa,2025-10-25 16:30:03.431826
+L5,parque-bustamante,Parque Bustamante,0,Estación Operativa,2025-10-25 16:30:03.431827
+L5,santa-isabel,Santa Isabel,0,Estación Operativa,2025-10-25 16:30:03.431827
+L5,irarra-zaval,IrarrÃ¡zaval,0,Estación Operativa,2025-10-25 16:30:03.431828
+L5,auble,Ãuble,0,Estación Operativa,2025-10-25 16:30:03.431829
+L5,rodrigo-de-araya,Rodrigo de Araya,0,Estación Operativa,2025-10-25 16:30:03.431829
+L5,carlos-valdovinos,Carlos Valdovinos,0,Estación Operativa,2025-10-25 16:30:03.431830
+L5,camino-agracola,Camino AgrÃ­cola,0,Estación Operativa,2025-10-25 16:30:03.431831
+L5,san-joaquan,San JoaquÃ­n,0,Estación Operativa,2025-10-25 16:30:03.431831
+L5,pedrero,Pedrero,0,Estación Operativa,2025-10-25 16:30:03.431832
+L5,mirador,Mirador,0,Estación Operativa,2025-10-25 16:30:03.431833
+L5,bellavista-de-la-florida,Bellavista de La Florida,0,Estación Operativa,2025-10-25 16:30:03.431833
+L5,vicente-valda-c-s,Vicente ValdÃ©s,0,Estación Operativa,2025-10-25 16:30:03.431834
+L6,cerrillos,Cerrillos,0,Estación Operativa,2025-10-25 16:30:03.431836
+L6,lo-valledor,Lo Valledor,0,Estación Operativa,2025-10-25 16:30:03.431837
+L6,pdte-pedro-aguirre-cerda,Pdte. Pedro Aguirre Cerda,0,Estación Operativa,2025-10-25 16:30:03.431839
+L6,franklin,Franklin,0,Estación Operativa,2025-10-25 16:30:03.431840
+L6,bao-bao,BÃ­o BÃ­o,0,Estación Operativa,2025-10-25 16:30:03.431840
+L6,auble,Ãuble,0,Estación Operativa,2025-10-25 16:30:03.431841
+L6,estadio-nacional,Estadio Nacional,0,Estación Operativa,2025-10-25 16:30:03.431842
+L6,aua-oa,ÃuÃ±oa,0,Estación Operativa,2025-10-25 16:30:03.431842
+L6,ina-c-s-de-sua-rez,InÃ©s de SuÃ¡rez,0,Estación Operativa,2025-10-25 16:30:03.431843
+L6,los-leones,Los Leones,0,Estación Operativa,2025-10-25 16:30:03.431844
