@@ -27,7 +27,8 @@ Los archivos principales del proyecto corresponden a:
 
 ### Scripts
 En el directorio **`Scripts`** se encuentran los scripts de bash que permiten la automatización de la recolección de datos. Para asegurar la recolección continua de datos, estos scripts están configurados para ejecutarse automáticamente en un servidor mediante tareas de **cron**. El archivo `crontab.txt` documenta la configuración utilizada. El servidor utilizado funciona las 24 horas los 7 días de la semana, corriendo Ubuntu Server 24.04 LTS como sistema operativo.
-
+* **`extraccion_buses.sh`**: Se encarga de extraer los datos de buses.
+* **`buses.sh`**: Se encarga de extraer los datos de metro.
 * **`buses.sh`**: Se encarga de ingresar al entorno virtual de Python en el servidor para posteriormente ejecutar **`extraccion_buses.py`**.
 * **`metro.sh`**: Se encarga de ingresar al entorno virtual de Python en el servidor para posteriormente ejecutar **`extraccion_metro.py`**.
 * **`hacer_commit.sh`**: Se encarga de añadir **`buses_outputs`** y **`metro_outputs`** al repositorio y posteriormente hacer un commit, con la fecha actual en el comentario de este.
