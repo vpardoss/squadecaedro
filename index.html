@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squadecaedro: Análisis del Transporte Público en Santiago</title>
+    <style>
+        :root {
+            --primary-color: #580000;
+            --secondary-color: #A30000;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --chart-bg: #fff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        header {
+            background-image: url('assets/bus.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            padding: 0 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 2.5rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .team-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .team-list li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .chart-container {
+            background-color: var(--chart-bg);
+            border: 1px solid #e0e0e0;
+            padding: 1rem;
+            text-align: center;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .chart-caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            text-align: justify;
+            padding: 0 1rem;
+        }
+
+        .highlight-box {
+            background-color: #e8f4f8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #3498db;
+            margin: 1.5rem 0;
+        }
+
+        .question-block {
+            background-color: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .question-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .question-text {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .answer-status {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .answer-text {
+            color: var(--text-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Squadecaedro: Análisis del Transporte Público en Santiago</h1>
+        <p>Por Daniela Espinoza, Carolina Lobos y Vicente Pardo.</p>
+    </header>
+
+    <div class="container">
+
+        <section id="contexto">
+            <h2>1. Contexto y Motivación</h2>
+            <p>
+                La urbanización es un fenómeno que ocurre a nivel mundial y se espera que continúe acrecentándose en los próximos años; según estimaciones de la ONU, a día de hoy más de un 55% de la población mundial vive en zonas urbanas. En la Región Metropolitana de Chile, donde residen <strong>7.400.741 personas</strong> según el Censo 2024, el servicio de transporte público es de gran significancia para el desarrollo de las actividades del día a día, pero presenta muchas fallas que repercuten en la vida de muchísimas personas. El problema a tratar corresponde al de la movilidad usando como medio el transporte público, específicamente, el <strong>retraso con el que pasan los buses y la inhabilitación de estaciones de metro</strong>. Una encuesta de 2023 indica que un <strong>37% de los encuestados concuerda en que su principal problema es la poca frecuencia con que pasa el transporte</strong>. La motivación del proyecto se basa en la detección de patrones de ineficiencia del sistema de transporte público, específicamente, del transantiago y el metro.
+            </p>
+            <div class="highlight-box">
+                <strong>Objetivos de la investigación:</strong> Localizar puntos débiles en los servicios de transporte público de Santiago con la finalidad de buscar y generar posibles soluciones. Esto se logrará al responder: ¿En qué horarios son más recurrentes los problemas con el servicio?, ¿Cuáles son las zonas en las que más tiende a fallar?, ¿Qué factores se correlacionan con dichas fallas?, ¿Existe una relación entre aquellos paraderos/estaciones que presentan problemas de frecuencia en la que pasa el transporte, con el flujo de personas que concurren a ellos?, ¿Cuáles son los recorridos de RED con frecuencias más irregulares de Santiago?
+            </div>
+        </section>
+
+        <section id="metodologia">
+            <h2>2. Metodología de datos</h2>
+            <p>
+                La recolección de los datos de la Red Metropolitana de Movilidad (RED) se lleva a cabo de forma <strong>automatizada</strong> a través de la API <strong>api-red</strong> mediante scripts programados en un servidor (Cron). Para el <strong>Transantiago (micros)</strong>, los datos se extraen <strong>cada 2 horas</strong> a las 6:00, 8:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00, y 22:00 hrs. Los datos del <strong>estado del Metro de Santiago</strong> se recolectan <strong>cada 1 hora</strong>, desde las 6:30am hasta las 22:30am. Los datos recolectados en bruto se almacenan en los directorios <strong>buses_outputs</strong> y <strong>metro_outputs</strong>.
+            </p>
+            <p>
+                Se definió una segmentación horaria basada en las rutas expresas del metro: <strong>Hora Punta AM</strong> (6am y 8am), <strong>Hora Valle AM</strong> (10am y 12pm), <strong>Hora Valle PM</strong> (14pm y 16pm), <strong>Hora Punta PM</strong> (18pm y 20pm) y <strong>Hora Noche</strong> (22pm).
+            </p>
+            <p>
+                Posteriormente, se aplicó un proceso de <strong>ETL (Extracción, Transformación y Carga)</strong> utilizando el notebook <strong>unificacion_datos.ipynb</strong>. Este proceso se encargó de la limpieza y la fusión de los archivos CSV, generando datos unificados y listos para el análisis, incluyendo información detallada de los paraderos como comuna, coordenadas y número de servicios. Los resultados de este proceso de ETL se encuentran en los directorios <strong>csv_unificado_*</strong>.
+            </p>
+        </section>
+
+        <section id="analisis">
+            <h2>3. Resultados y Análisis</h2>
+
+            <div class="question-block">
+                <div class="question-text">P1: ¿Cuáles son los horarios que generan mayor desbalance con respecto a la frecuencia del transporte?</div>
+                <div class="answer-text">
+                    Los horarios más problemáticos corresponden a las <strong>6:00 hrs</strong> y a las <strong>22:00 hrs</strong>. En general, la diferencia entre sectores en la mediana de tiempo de espera no es exorbitante, pero el tiempo se vuelve importantísimo, sobretodo en horas punta y noche. El <strong>Sector Poniente</strong> tiene como constante una mediana de 9 minutos en la mayoría de horarios y presenta el peor comportamiento a las 6:00 hrs, con un tiempo de espera bastante superior al resto de los sectores y horarios.
+                </div>
+                <div class="chart-container">
+                    <img src="assets/mediana_distancia.png" alt="Gráfico de Mediana de tiempo mínimo de espera por hora y sector">
+                    <div class="chart-caption">Mediana de distancia mínima por hora y sector (Gráfico 1).</div>
+                <div class="chart-container">
+                    <img src="assets/mediana_tiempo.png" alt="Gráfico de Mediana de tiempo mínimo de espera por hora y sector">
+                    <div class="chart-caption">Mediana de tiempo mínimo de espera por hora y sector (Gráfico 2).</div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question-text">P2: ¿Cuáles son los sectores con mayor frecuencia de asaltos/robos?</div>
+                <div class="answer-text">
+                    <strong>No.</strong> Dado que no tenemos una base de datos específicamente de esta problemática, no será posible responder esta pregunta.
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question-text">P3: ¿La frecuencia del transporte por sector es proporcional a la densidad demográfica respectiva?</div>
+                <div class="answer-text">
+                    <strong>No es proporcional.</strong> El análisis de datos ilustra que las comunas con mayor densidad poblacional no coinciden necesariamente con aquellas que tienen una alta densidad de paraderos, evidenciando un desequilibrio en la distribución de la oferta del transporte. No usamos directamente la columna que contiene la información con la densidad poblacional dado que los recorridos
+                    estarían sujetos a la misma cantidad de kilómetros cuadrados, es decir, la proporción entre la densidad poblacional y la densidad de recorridos
+                    por comuna sería la misma que la cantidad de personas por comuna y la cantidad de recorridos por comuna.
+                </div>
+                <div class="chart-container">
+                    <img src="assets/relacion_recorridos_poblacion.png" alt="Gráfico de Densidad Poblacional vs. Densidad de Recorridos">
+                    <div class="chart-caption">Densidad Poblacional vs. Densidad de Recorridos por Comuna (Gráfico 3).</div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question-text">P4: ¿La frecuencia del transporte por horario es proporcional a la cantidad de personas que necesitan movilizarse en tales horarios?</div>
+                <div class="answer-text">
+                    <strong>No.</strong> La frecuencia de las micros es dispar, debido a que si bien en los horarios PM se cumple que habrá más oferta de buses para las personas que necesitan tomar transporte público en determinados horarios, esta proporcionalidad <strong>no se cumple en los horarios AM</strong>.
+                </div>
+                <div class="chart-container">
+                    <img src="assets/frecuencia-demoras.png" alt="Gráfico de Frecuencia de Demoras por Horario">
+                </div>
+                <div class="chart-container">
+                    <img src="assets/proporcionalidad_servicio.png" alt="Proporcionalidad del servicio por Horario">
+                    <div class="chart-caption">Proporcionalidad en la <strong>disponibilidad</strong> (cociente_am_valle_am: <strong>0.9</strong>, cociente_pm_valle_pm: <strong>1.22</strong>, cociente_pm_noche: <strong>1.01</strong>, cociente_am_pm: <strong>0.73</strong>) y en la <strong>calidad</strong> (tiempo_am_valle_am: <strong>1.0</strong>, tiempo_pm_valle_pm: <strong>1.0</strong>, tiempo_pm_noche: <strong>0.44</strong>, tiempo_am_pm: <strong>1.0</strong>) del servicio (Gráfico 4 y 5).</div>
+                </div>
+            </div>
+
+            <div class="question-block">
+                <div class="question-text">P5: ¿Cuáles son los recorridos de RED con frecuencias más irregulares de Santiago?</div>
+                <div class="answer-text">
+                    El análisis permitió identificar los recorridos problemáticos. Los recorridos RED más irregulares EN PROMEDIO son: <strong>J07c2, 414e, 417e, 415e, 204e, 428e, 262n, 546e, 506e, y 219e</strong>.
+                </div>
+                <div class="chart-container">
+                    <img src="assets/recorridos_mas_irregulares_2.png" alt="Gráfico de Torta de Recorridos más Irregulares">
+                    <div class="chart-caption">Recorridos más irregulares (Gráfico 6).</div>
+                </div>
+                <div class="chart-container">
+                    <img src="assets/recorridos_mas_irregulares.png" alt="Gráfico de Recorridos más Irregulares">
+                    <div class="chart-caption">Recorridos más irregulares (Gráfico 7).</div>
+                </div>
+                <div class="chart-container">
+                    <img src="assets/recoridos_mas_demora.png" alt="Gráfico de Recorridos con Mayor Demora Promedio">
+                    <div class="chart-caption">Recorridos con mayor demora promedio (Gráfico 8).</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusiones">
+            <h2>5. Conclusiones</h2>
+            <p>
+                A partir del <strong>análisis realizado</strong> (y más profundizado en el notebook “analisis_data.ipynb”), podemos concluir que por lo general el <strong>sistema de transporte público</strong> tiene un <strong>buen funcionamiento</strong>, pero que tiene que <strong>enfocarse en mejorar aristas</strong> como por ejemplo la <strong>oferta de micros en los horarios críticos</strong> y <strong>disminuir los tiempos de demora</strong>. Para lograrlo, es importante tomar más atención a los <strong>siguientes datos</strong> y plantearse las <strong>siguientes preguntas</strong>:
+                <ul>
+                    <li><strong>Horas punta</strong>: ¿En qué sector hay <strong>mala calidad del servicio</strong> en ellas?</li>
+                    <li><strong>Densidad poblacional</strong>: ¿Qué comunas necesitan <strong>mayor oferta de micros</strong>?</li>
+                    <li><strong>Causas de los tiempos de espera</strong>: ¿Dependen de algo más que la oferta de micros? En los casos que la respuesta es sí: <strong>¿Cómo los evitamos?</strong></li>
+                    <li>¿En qué sectores hay <strong>más inversión</strong> para el transporte público?, <strong>¿Por qué dichos sectores?</strong></li>
+                    <li>¿<strong>Cuántas personas</strong> se ven afectadas por aquellos recorridos que <strong>demoran demasiado</strong> en pasar?</li>
+                    <li><strong>¿Cuál es el perfil del usuario?</strong></li>
+                </ul>
+                Con las respectivas <strong>respuestas a estas preguntas</strong>, se puede <strong>impactar positivamente</strong> en el <strong>día a día de las personas</strong> que toman <strong>transporte público</strong>.
+            </p>
+            <p>
+                <strong>¿Qué pasa con el metro?</strong> Al <strong>no tener muchos días de datos</strong>, y en ellos tener <strong>casos mínimos</strong> donde el servicio falló, <strong>no fue un factor crucial</strong> para el análisis, sobretodo considerando que, para cuando este falla, se pueden buscar <strong>rutas alternativas</strong>, ya sea combinando en otras líneas de metro o tomando micro. Cabe recalcar que <strong>no se le busca restar importancia</strong>, pero se le podía sacar <strong>más valor a los datos de las micros</strong>, y además que las preguntas del proyecto tenían un <strong>enfoque superior en el Transantiago</strong>.
+            </p>
+            <p>
+                En síntesis, el <strong>análisis realizado demuestra</strong> que, independiente de las percepciones de cada persona, la <strong>mayoría de los recorridos operan dentro de parámetros aceptables</strong> en cuanto a <strong>puntualidad y frecuencia</strong>. Ello, <strong>no minimiza la necesidad de abordar las rutas críticas</strong> donde hay <strong>demoras imprudentes</strong>, sino convierte dichos casos como <strong>focos específicos mejorables dentro del sistema</strong>. Si bien el <strong>sistema de transporte público</strong> requiere <strong>atención prioritaria en áreas determinadas</strong>, sobretodo en la <strong>optimización de frecuencias durante horarios punta</strong> y la <strong>reducción de tiempos de espera en comunas específicas</strong>, los <strong>datos analizados demuestran</strong> que, por lo general el <strong>sistema cumple con su función esencial</strong>: <strong>conectar al usuario con su destino de manera eficiente</strong>. Al tomar <strong>foco en mejorar la calidad de aristas determinadas por características demográficas y de demanda</strong> dentro de cada sector y comuna, el <strong>sistema de transporte público en Santiago</strong> podrá <strong>consolidarse</strong> más allá de que funcione, sino que <strong>su servicio tenga un impacto positivo dentro de la población</strong>.
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Squadecaedro - Análisis de Datos del Transporte Público de Santiago
+        </p>
+    </footer>
+
+</body>
+</html>
