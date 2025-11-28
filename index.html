@@ -206,7 +206,7 @@
         <section id="metodologia">
             <h2>2. Metodología de datos</h2>
             <p>
-                La recolección de los datos de la Red Metropolitana de Movilidad (RED) se lleva a cabo de forma <strong>automatizada</strong> a través de la API <strong>api-red</strong> mediante scripts programados en un servidor (Cron). Para el <strong>Transantiago (micros)</strong>, los datos se extraen <strong>cada 2 horas</strong> a las 6:00, 8:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00, y 22:00 hrs. Los datos del <strong>estado del Metro de Santiago</strong> se recolectan <strong>cada 1 hora</strong>, desde las 6:30am hasta las 22:30am. Los datos recolectados en bruto se almacenan en los directorios <strong>buses_outputs</strong> y <strong>metro_outputs</strong>.
+                La recolección de los datos de la Red Metropolitana de Movilidad (RED) se lleva a cabo de forma <strong>automatizada</strong> a través de la API <strong>api-red</strong> mediante scripts programados en un servidor (Cron). Para los<strong>buses de RED</strong>, los datos se extraen <strong>cada 2 horas</strong> a las 6:00, 8:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00, y 22:00 hrs. Los datos del <strong>estado del Metro de Santiago</strong> se recolectan <strong>cada 1 hora</strong>, desde las 6:30am hasta las 22:30am. Los datos recolectados en bruto se almacenan en los directorios <strong>buses_outputs</strong> y <strong>metro_outputs</strong>.
             </p>
             <p>
                 Se definió una segmentación horaria basada en las rutas expresas del metro: <strong>Hora Punta AM</strong> (6am y 8am), <strong>Hora Valle AM</strong> (10am y 12pm), <strong>Hora Valle PM</strong> (14pm y 16pm), <strong>Hora Punta PM</strong> (18pm y 20pm) y <strong>Hora Noche</strong> (22pm).
@@ -295,7 +295,7 @@
             </p>
             <p>
                 <strong>¿Qué podría salir mal?</strong>
-                    <li>Con esta limitación de cantidad de paraderos que podíamos extraer por hora, nos vimos en la obligación de tomar 1000 paraderos aleatorios por hora. Si bien a lo largo de las semanas de extracción, tenemos datos de todos los paraderos disponibles, esto abre espacio a una posible impresición en nuestros datos de buses.</li>
+                    <li>Con esta limitación de cantidad de paraderos que podíamos extraer por hora, nos vimos en la obligación de tomar 1000 paraderos aleatorios por hora. Si bien a lo largo de las semanas de extracción, tenemos datos de todos los paraderos disponibles, esto abre espacio a una posible imprecisión en nuestros datos de buses.</li>
             </p>
         <section id="conclusiones">
             <h2>6. Conclusiones</h2>
